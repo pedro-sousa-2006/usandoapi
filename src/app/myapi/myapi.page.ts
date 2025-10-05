@@ -33,4 +33,7 @@ imagem = "";
       console.log("erro");
     }
 }
+remove(){
+  this.imagem = "";
+}
 }

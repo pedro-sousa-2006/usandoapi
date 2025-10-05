@@ -1,7 +1,7 @@
     <app-menu></app-menu>
     <ion-content class="content">
         <ion-title>
-            <h2 class="texto">Usando API de gato</h2>
+            <h2 class="texto">Fazendo uma API</h2>
         </ion-title>
         <div class="posicao">
             <ion-img [src]="imagem"
@@ -9,7 +9,12 @@
         </div>
         <div class="botao">
             <ion-button (click)="cat()"
+            color="success"
+            *ngIf="!imagem"
         >Clique aqui</ion-button>
+        <ion-button (click)="remove()"
+            *ngIf="imagem" color="danger"
+        >Remover</ion-button>
         </div>
 
     </ion-content>
