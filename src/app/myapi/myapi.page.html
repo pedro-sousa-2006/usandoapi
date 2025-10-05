@@ -1,0 +1,16 @@
+    <app-menu></app-menu>
+    <ion-content class="content">
+        <ion-title>
+            <h2 class="texto">Usando API de gato</h2>
+        </ion-title>
+        <div class="posicao">
+            <ion-img [src]="imagem"
+        *ngIf="imagem" class="imagem"></ion-img>
+        </div>
+        <div class="botao">
+            <ion-button (click)="cat()"
+        >Clique aqui</ion-button>
+        </div>
+
+    </ion-content>
+    <app-rodape></app-rodape>

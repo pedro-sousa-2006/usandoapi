@@ -1,0 +1,25 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+.posicao{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.imagem{
+    width: 200px;
+    height: 400px;
+}
+.texto{
+    text-align: center;
+}
