@@ -19,11 +19,17 @@ import {Services} from '../service/services';
 export class MyapiPage implements OnInit {
 imagem = "";
   constructor(private services:Services) { }
-
+async mudar(){
+  try{
+      const res =await this.services.getRandomCat();
+      this.imagem =  res[0].url;
+    }catch{
+      console.log("erro");
+    }
+  }
   ngOnInit() {
     
   }
-
 
   async cat(){
     try{
@@ -37,3 +43,5 @@ remove(){
   this.imagem = "";
 }
 }
+
+

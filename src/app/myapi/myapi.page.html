@@ -12,6 +12,9 @@
             color="success"
             *ngIf="!imagem"
         >Clique aqui</ion-button>
+        <ion-button color="success" (click)="mudar()" *ngIf="imagem">
+            Mudar a imagem
+        </ion-button>
         <ion-button (click)="remove()"
             *ngIf="imagem" color="danger"
         >Remover</ion-button>
